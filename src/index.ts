@@ -5,6 +5,7 @@ export { permissionManager } from "./services/permission"
 export * from "./events/board/board-created-event"
 export * from "./events/board/board-updated-event"
 export * from "./events/board/board-delete-event"
+export * from "./events/board/board-viewed-event"
 export * from "./events/board/board-get-event"
 export * from "./events/board/board-list-event"
 

@@ -63,6 +63,7 @@ export enum Subjects {
   BoardCreated = "board:created",
   BoardDeleted = "board:deleted",
   BoardUpdated = "board:updated",
+  BoardViewed = "board:viewed",
   GetBoardById = "board:by:id",
   GetBoards = "boards:list",
 
