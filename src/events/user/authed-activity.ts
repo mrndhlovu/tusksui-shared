@@ -1,4 +1,4 @@
-import { ACTIVITY_TYPES, Subjects } from "../.."
+import { ACTIVITY_TYPES, Subjects } from "../../types"
 
 export interface IAuthedActivityEvent {
   subject: Subjects.AuthedActivity
