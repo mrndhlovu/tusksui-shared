@@ -15,10 +15,10 @@ export * from "./events/list/list-updated-event"
 
 export * from "./events/user/user-created-event"
 export * from "./events/user/user-deleted-event"
-// export * from "./events/user/new-activity"
+export * from "./events/user/new-activity"
 
-// export * from "./events/activity/new-activity"
-// export * from "./events/user/authed-activity"
+export * from "./events/activity/new-activity"
+export * from "./events/user/authed-activity"
 
 export * from "./services/error"
 export * from "./services/base-listener"
