@@ -72,6 +72,7 @@ export enum Subjects {
   ListDeleted = "list:deleted",
 
   NewActivity = "activity:new",
+  AuthedActivity = "activity:authenticated",
 
   Card = "card:created",
   CardUpdated = "card:updated",

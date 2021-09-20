@@ -18,6 +18,7 @@ export * from "./events/user/user-deleted-event"
 export * from "./events/user/new-activity"
 
 export * from "./events/publisher/new-activity"
+export * from "./events/user/authed-activity"
 
 export * from "./services/error"
 export * from "./services/base-listener"
