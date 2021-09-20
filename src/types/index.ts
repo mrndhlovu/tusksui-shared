@@ -71,6 +71,8 @@ export enum Subjects {
   ListUpdated = "list:updated",
   ListDeleted = "list:deleted",
 
+  NewActivity = "activity:new",
+
   Card = "card:created",
   CardUpdated = "card:updated",
 
@@ -95,6 +97,15 @@ export enum AccountStatus {
   Cancelled = "cancelled",
   Created = "created",
   Pending = "pending",
+}
+
+export enum ACTIVITY_TYPES {
+  BOARD = "board",
+  CARD = "card",
+  COMMENT = "comment",
+  LIST = "list",
+  CHECKLIST = "checklist",
+  TASK = "task",
 }
 
 export interface INewPayment {
