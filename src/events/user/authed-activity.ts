@@ -11,6 +11,7 @@ export interface IAuthedActivityEvent {
       id: string
       username: string
       fullName?: string
+      initials: string
     }
   }
 }
