@@ -6,5 +6,6 @@ export interface INewActivityEvent {
     id: string
     userId: string
     type: ACTIVITY_TYPES
+    actionKey: string
   }
 }

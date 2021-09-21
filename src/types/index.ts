@@ -83,6 +83,32 @@ export enum Subjects {
   Email = "send:email",
 }
 
+export enum ACTION_KEYS {
+  CREATE_BOARD = "created:board",
+  DELETED_BOARD = "deleted:board",
+  ARCHIVED_BOARD = "archived:board",
+
+  CREATE_CARD = "created:card",
+  TRANSFER_CARD = "transferred:card",
+  COMMENT_ON_CARD = "commented:on:card",
+  ADD_CHECKLIST = "added:checklist:to:card",
+  MOVE_CARD_TO_LIST = "moved:card:from:list:to:list",
+  MOVE_CARD_UP = "moved:card:up",
+  MOVE_CARD_DOWN = "moved:card:down",
+  DELETED_CARD = "deleted:card",
+  ARCHIVED_CARD = "archived:card",
+  CONVERT_TASK_TO_CARD = "converted:task:to:card",
+  CHANGED_CARD_COVER = "added:card:cover",
+  REMOVED_CARD_COVER = "removed:card:cover",
+  ADD_CARD_ATTACHMENT = "added:card:attachment",
+  REMOVE_CARD_ATTACHMENT = "removed:card:attachment",
+
+  CREATE_LIST = "add:list:to:board",
+  TRANSFER_LIST = "transferred:list",
+  DELETED_LIST = "deleted:list",
+  ARCHIVED_LIST = "archived:list",
+}
+
 export enum queueGroupNames {
   BOARDS_QUEUE_GROUP = "boards-service",
   CARDS_QUEUE_GROUP = "cards-service",
