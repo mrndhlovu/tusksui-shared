@@ -114,6 +114,7 @@ export enum queueGroupNames {
   CARDS_QUEUE_GROUP = "cards-service",
   LIST_QUEUE_GROUP = "list-service",
   AUTH_QUEUE_GROUP = "auth-service",
+  AUTH_ACTIVITY_QUEUE_GROUP = "activity-service",
   ACCOUNT_QUEUE_GROUP = "accounts-service",
   PAYMENTS_QUEUE_GROUP = "payment-service",
   EMAIL_QUEUE_GROUP = "email-service",
