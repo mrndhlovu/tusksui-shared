@@ -3,10 +3,14 @@ import { ACTIVITY_TYPES, Subjects } from "../../types"
 export interface IAuthedActivityEvent {
   subject: Subjects.AuthedActivity
   data: {
-    description: string
-    fullName: string
+    actionKey: string
+    data: { [key: string]: any }
     id: string
     type: ACTIVITY_TYPES
-    userId: string
+    user: {
+      id: string
+      username: string
+      fullName?: string
+    }
   }
 }
