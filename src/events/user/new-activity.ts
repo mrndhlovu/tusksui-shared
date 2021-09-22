@@ -4,8 +4,7 @@ export interface INewActivityEvent {
   subject: Subjects.NewActivity
   data: {
     actionKey: string
-    data: { [key: string]: any }
-    id: string
+    data: { id: string; name: string; [key: string]: any }
     type: ACTIVITY_TYPES
     userId: string
   }
