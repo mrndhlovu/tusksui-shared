@@ -5,7 +5,6 @@ export interface IAuthedActivityEvent {
   data: {
     actionKey: string
     data: { [key: string]: any }
-    id: string
     type: ACTIVITY_TYPES
     user: {
       id: string
