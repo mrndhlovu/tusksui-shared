@@ -4,7 +4,7 @@ export interface IAuthedActivityEvent {
   subject: Subjects.AuthedActivity
   data: {
     actionKey: string
-    data: { [key: string]: any }
+    entities: { [key: string]: any }
     type: ACTIVITY_TYPES
     user: {
       id: string
