@@ -107,6 +107,8 @@ export enum ACTION_KEYS {
   TRANSFER_LIST = "transferred:list",
   DELETED_LIST = "deleted:list",
   ARCHIVED_LIST = "archived:list",
+  MOVE_LIST_LEFT = "move:list:left",
+  MOVE_LIST_RIGHT = "move:list:right",
 }
 
 export enum queueGroupNames {
