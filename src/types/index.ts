@@ -71,8 +71,8 @@ export enum Subjects {
   ListUpdated = "list:updated",
   ListDeleted = "list:deleted",
 
-  NewActivity = "activity:new",
-  AuthedActivity = "activity:authenticated",
+  NewAction = "action:new",
+  AuthedAction = "action:authenticated",
 
   Card = "card:created",
   CardUpdated = "card:updated",
@@ -116,7 +116,7 @@ export enum queueGroupNames {
   CARDS_QUEUE_GROUP = "cards-service",
   LIST_QUEUE_GROUP = "list-service",
   AUTH_QUEUE_GROUP = "auth-service",
-  AUTH_ACTIVITY_QUEUE_GROUP = "activity-service",
+  AUTH_ACTION_QUEUE_GROUP = "action-service",
   ACCOUNT_QUEUE_GROUP = "accounts-service",
   PAYMENTS_QUEUE_GROUP = "payment-service",
   EMAIL_QUEUE_GROUP = "email-service",
@@ -129,12 +129,13 @@ export enum AccountStatus {
   Pending = "pending",
 }
 
-export enum ACTIVITY_TYPES {
+export enum ACTION_TYPES {
+  ATTACHMENT = "attachment",
   BOARD = "board",
   CARD = "card",
+  CHECKLIST = "checklist",
   COMMENT = "comment",
   LIST = "list",
-  CHECKLIST = "checklist",
   TASK = "task",
 }
 

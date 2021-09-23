@@ -1,11 +1,11 @@
-import { ACTIVITY_TYPES, Subjects } from "../../types"
+import { ACTION_TYPES, Subjects } from "../../types"
 
-export interface IAuthedActivityEvent {
-  subject: Subjects.AuthedActivity
+export interface IAuthedActionEvent {
+  subject: Subjects.AuthedAction
   data: {
     actionKey: string
     entities: { [key: string]: any }
-    type: ACTIVITY_TYPES
+    type: ACTION_TYPES
     user: {
       id: string
       username: string

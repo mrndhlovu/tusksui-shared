@@ -20,6 +20,7 @@ declare global {
     }
   }
 }
+
 class AuthMiddleWare {
   checkIsAuthenticated = catchAsyncError(
     async (req: Request, res: Response, next: NextFunction) => {

@@ -1,5 +1,4 @@
 export { authMiddleware } from "./middleware/auth"
-export { authUtils } from "./services/auth"
 export { permissionManager } from "./services/permission"
 
 export * from "./events/board/board-created-event"
@@ -15,10 +14,10 @@ export * from "./events/list/list-updated-event"
 
 export * from "./events/user/user-created-event"
 export * from "./events/user/user-deleted-event"
-export * from "./events/user/new-activity"
+export * from "./events/user/new-action"
 
-export * from "./events/activity/new-activity"
-export * from "./events/user/authed-activity"
+export * from "./events/action/new-action"
+export * from "./events/user/authed-action"
 
 export * from "./services/error"
 export * from "./services/base-listener"
