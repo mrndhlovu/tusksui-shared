@@ -1,6 +1,6 @@
 {
   "name": "@tusksui/shared",
-  "version": "0.0.71",
+  "version": "0.0.72",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
