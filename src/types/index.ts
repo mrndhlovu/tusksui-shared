@@ -12,6 +12,8 @@ export enum JwtSignature {
 
 export interface IJwtAuthToken {
   userId?: string
+  username: string
+  name?: string
   email: string
   mfa?: {
     validated: boolean
