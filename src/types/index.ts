@@ -83,6 +83,9 @@ export enum Subjects {
   PaymentFailed = "payments:failed",
 
   Email = "send:email",
+
+  WorkspaceCreated = "workspace:created",
+  WorkspaceUpdated = "workspace:updated",
 }
 
 export enum ACTION_KEYS {

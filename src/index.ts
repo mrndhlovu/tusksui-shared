@@ -18,6 +18,7 @@ export * from "./events/user/new-action"
 
 export * from "./events/action/new-action"
 export * from "./events/user/authed-action"
+export * from "./events/board/workspace-created"
 
 export * from "./services/error"
 export * from "./services/base-listener"
