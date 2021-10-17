@@ -12,7 +12,7 @@ export * from "./events/list/list-created-event"
 export * from "./events/list/list-deleted-event"
 export * from "./events/list/list-updated-event"
 
-export * from "./events/notification/index"
+export * from "./events/notification/create-notification"
 
 export * from "./events/user/user-created-event"
 export * from "./events/user/user-deleted-event"
