@@ -12,7 +12,7 @@ export interface ICreateNotificationEvent {
     id: string
     subject: string
     title: string
-    type: string
+    resourceType: string
     userId: string
   }
 }
