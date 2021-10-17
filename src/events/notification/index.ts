@@ -1,4 +1,4 @@
-import { Publisher } from "../.."
+import { Publisher } from "../../services/base-publisher"
 import { Subjects } from "../../types"
 
 export class CreateNotificationPublisher extends Publisher<ICreateNotificationEvent> {
