@@ -83,6 +83,7 @@ export enum Subjects {
   PaymentFailed = "payments:failed",
 
   Email = "send:email",
+  CreateNotification = "create:notification",
 
   WorkspaceCreated = "workspace:created",
   WorkspaceUpdated = "workspace:updated",
