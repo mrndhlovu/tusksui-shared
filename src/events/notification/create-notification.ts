@@ -13,6 +13,9 @@ export interface ICreateNotificationEvent {
     subject: string
     title: string
     actionKey?: string
-    userId: string
+    user: {
+      id: string
+      initials: string
+    }
   }
 }
