@@ -8,5 +8,6 @@ export interface IUserCreatedEvent {
     firstname: string
     lastname: string
     email: string
+    initials?: string
   }
 }

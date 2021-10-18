@@ -9,10 +9,10 @@ export interface ICreateNotificationEvent {
   subject: Subjects.CreateNotification
   data: {
     body: string
-    id: string
+    id?: string
     subject: string
     title: string
-    resourceType: string
+    actionKey?: string
     userId: string
   }
 }
