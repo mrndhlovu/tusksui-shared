@@ -44,7 +44,7 @@ class AuthMiddleWare {
     }
   )
 
-  addAuthToApolloContext({ req }: { req: ExpressContext["req"] }) {
+  injectAuthContext({ req }: { req: ExpressContext["req"] }) {
     const authorization = req.get("Authorization")
     if (authorization) {
       const sessionJwtToken = authorization.replace("Bearer ", "")
@@ -60,7 +60,7 @@ class AuthMiddleWare {
     }
   }
 
-  authenticateApolloQuery = (resolver: any) => {
+  authenticateApolloRequest = (resolver: any) => {
     return (root: any, args: any, context: ExpressContext, info: any) => {
       if (context.req.currentUserJwt) {
         return resolver(root, args, context, info)
