@@ -26,7 +26,7 @@ declare global {
 class AuthMiddleWare {
   checkIsAuthenticated = catchAsyncError(
     async (req: Request, res: Response, next: NextFunction) => {
-      let authToken =
+      let authorizationToken =
         req?.get("Authorization")!.replace("Bearer ", "") || undefined
 
       if (req?.currentUserJwt?.userId) {
@@ -35,14 +35,12 @@ class AuthMiddleWare {
       const sessionJwtToken =
         req.session && req?.session!.jwt?.access
           ? req?.session!.jwt?.access
-          : authToken
+          : authorizationToken
 
       if (!sessionJwtToken) {
         req.session = null
         throw new NotAuthorisedError("Authorization credentials are missing.")
       }
-
-      console.log({ sessionJwtToken, req: req?.get("Authorization") })
 
       const currentUserJwt = jwt.verify(
         sessionJwtToken,
