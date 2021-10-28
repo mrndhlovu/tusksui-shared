@@ -27,7 +27,7 @@ class AuthMiddleWare {
   checkIsAuthenticated = catchAsyncError(
     async (req: Request, res: Response, next: NextFunction) => {
       let authorizationToken =
-        req?.get("Authorization")!.replace("Bearer ", "") || undefined
+        req?.get("Authorization")!?.replace("Bearer ", "") || undefined
 
       if (req?.currentUserJwt?.userId) {
         next()
