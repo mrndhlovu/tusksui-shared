@@ -26,6 +26,10 @@ declare global {
 class AuthMiddleWare {
   checkIsAuthenticated = catchAsyncError(
     async (req: Request, res: Response, next: NextFunction) => {
+      if (req?.currentUserJwt?.userId) {
+        next()
+      }
+
       if (!req.session || !req.session.jwt?.access) {
         req.session = null
         throw new NotAuthorisedError("Authorization credentials are missing.")
