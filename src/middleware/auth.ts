@@ -31,7 +31,9 @@ class AuthMiddleWare {
         throw new NotAuthorisedError("Authorization credentials are missing.")
       }
 
-      const sessionJwtToken = req?.session.jwt?.access
+      const sessionJwtToken =
+        req?.session.jwt?.access ||
+        req?.get("Authorization")!.replace("Bearer ", "")
 
       const currentUserJwt = jwt.verify(
         sessionJwtToken,
