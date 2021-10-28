@@ -46,7 +46,8 @@ class AuthMiddleWare {
 
   injectAuthContext({ req }: { req: ExpressContext["req"] }) {
     const authorization = req.get("Authorization")
-    if (authorization) {
+
+    if (authorization && authorization !== "") {
       const sessionJwtToken = authorization.replace("Bearer ", "")
 
       req.session! = { jwt: { access: sessionJwtToken } }
