@@ -35,6 +35,8 @@ class AuthMiddleWare {
         req?.session.jwt?.access ||
         req?.get("Authorization")!.replace("Bearer ", "")
 
+      console.log({ sessionJwtToken, req: req?.get("Authorization") })
+
       const currentUserJwt = jwt.verify(
         sessionJwtToken,
         process.env.JWT_TOKEN_SIGNATURE!
