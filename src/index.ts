@@ -35,3 +35,4 @@ export * from "./events/email/send-email"
 export * from "./types/index"
 
 export * from "./utils/constants"
+export * from "./utils/index"
