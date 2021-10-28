@@ -48,7 +48,8 @@ class AuthMiddleWare {
     const authorization = req.get("Authorization")
     if (authorization) {
       const sessionJwtToken = authorization.replace("Bearer ", "")
-      req.session!.jwt.access = sessionJwtToken
+
+      req.session! = { jwt: { access: sessionJwtToken } }
 
       const currentUserJwt = jwt.verify(
         sessionJwtToken,
