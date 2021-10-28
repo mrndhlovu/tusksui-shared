@@ -26,8 +26,9 @@ declare global {
 class AuthMiddleWare {
   checkIsAuthenticated = catchAsyncError(
     async (req: Request, res: Response, next: NextFunction) => {
-      let authorizationToken =
-        req?.get("Authorization")!?.replace("Bearer ", "") || undefined
+      const authorization = req?.get("Authorization")!?.replace("Bearer ", "")
+      const authorizationToken =
+        authorization !== "" ? authorization : undefined
 
       if (req?.currentUserJwt?.userId) {
         next()
