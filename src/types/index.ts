@@ -186,3 +186,98 @@ export enum HTTPStatusCode {
   GatewayTimeout = 504,
   HTTPVersionNotSupported = 505,
 }
+
+export interface ISignupCredentials {
+  username: string
+  email: string
+  password: string
+}
+
+export interface ILoginCredentials {
+  identifier: string
+  password: string
+}
+
+export interface ICodeVerification {
+  code: string
+}
+
+export interface ILabelProps {
+  color: string
+  id?: string
+  cardId?: string
+  name?: string
+}
+
+export interface INewBoardData {
+  title: string
+  activeBg: string
+  prefs: {
+    image?: string
+    color?: string
+  }
+  workspaceId?: string
+}
+
+export interface ICardDetails {
+  productId?: string
+  priceId?: string
+  source?: string
+  currency?: "usd" | "eur"
+  customerId?: string
+  amount?: string
+  paymentMethodId?: string
+  plan?: string
+}
+
+export interface ICardDraggingProps {
+  sourceCardId: string
+  targetCardId: string
+  sourceListId?: string
+  targetListId?: string
+  boardId?: string
+  isSwitchingList?: boolean
+  isSwitchingBoard?: boolean
+  targetBoardId?: string
+}
+
+export interface IUpdateWorkspace {
+  name?: string
+  category?: string
+  description?: string
+  shortname?: string
+  visibility?: "private" | "public"
+}
+
+export interface IRequestError {
+  errors: [{ message: string; [key: string]: any }]
+}
+
+export interface INewMfaData {
+  preference?: {
+    email?: boolean
+    sms?: boolean
+    authenticator?: boolean
+  }
+  code: string
+}
+
+export interface IPasswordConfirmation {
+  password: string
+}
+
+export interface IListDraggingProps {
+  sourceListId: string
+  targetListId: string
+  boardId?: string
+  isSwitchingBoard?: boolean
+  targetBoardId: string
+}
+
+export interface IUpdateBoardData {
+  [key: string]: any
+}
+
+export interface IRequestError {
+  errors: [{ message: string; [key: string]: any }]
+}
